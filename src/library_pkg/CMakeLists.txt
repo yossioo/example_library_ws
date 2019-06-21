@@ -32,4 +32,18 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_library(SimpleLibrary SHARED include/SimpleLibrary/simple_library.cpp)
+
+target_include_directories(SimpleLibrary
+        PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>)
+
+add_executable(main src/main.cpp)
+target_link_libraries(main SimpleLibrary)
+ament_export_include_directories(include)
+ament_export_libraries(SimpleLibrary)
+
+
+
 ament_package()
