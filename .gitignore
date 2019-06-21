@@ -2,3 +2,6 @@
 build/
 log/
 install/
+cmake-build-*/
+\.idea/
+
