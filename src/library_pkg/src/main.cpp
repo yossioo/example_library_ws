@@ -7,7 +7,8 @@
 #include <SimpleLibrary/simple_library.hpp>
 
 
-int main (){
-    std::cout << "The answer: " << SimpleNamespace::SimpleLibrary::foo()  << std::endl;
+int main()
+{
+    std::cout << "The answer: " << SimpleNamespace::SimpleLibrary::foo() << std::endl;
     return 0;
 }

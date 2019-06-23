@@ -4,6 +4,7 @@
 
 #include "simple_library.hpp"
 
+
 using namespace SimpleNamespace;
 
 int SimpleLibrary::foo()
