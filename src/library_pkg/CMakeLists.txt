@@ -40,10 +40,10 @@ install(DIRECTORY include/
 # -->   #include <library_pkg/SimpleLibrary/simple_library.hpp>
 
 # Another option is to omit the package name
-install(DIRECTORY include/
-        DESTINATION include/
-        FILES_MATCHING PATTERN "*.hpp"
-        PATTERN ".svn" EXCLUDE)
+#install(DIRECTORY include/
+#        DESTINATION include/
+#        FILES_MATCHING PATTERN "*.hpp"
+#        PATTERN ".svn" EXCLUDE)
 # -->   #include <SimpleLibrary/simple_library.hpp>
 
 
